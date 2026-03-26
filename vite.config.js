@@ -7,7 +7,6 @@ export default defineConfig({
   resolve: {
     alias: {
       assets: path.resolve(__dirname, "src/assets"),
-      redux: path.resolve(__dirname, "src/redux"),
       i18n: path.resolve(__dirname, "src/i18n"),
       components: path.resolve(__dirname, "src/components"),
       styles: path.resolve(__dirname, "src/styles"),

@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
 import classnames from "classnames";
 
-import { setLang } from "redux/features/lang";
+import { setLang } from "../redux/features/lang";
 
 export const LanguageSwitcher = () => {
     const dispatch = useDispatch();

@@ -16,7 +16,7 @@ import {
   setProducts,
   removeFromCart,
   checkForEmptyCart,
-} from "redux/features/catalog";
+} from "../redux/features/catalog";
 import palette_1 from "assets/images/palette_1.png";
 import palette_2 from "assets/images/palette_2.png";
 

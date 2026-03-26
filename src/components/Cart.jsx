@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import { CartItem } from "./CartItem";
-import { setCart } from "redux/features/catalog";
+import { setCart } from "../redux/features/catalog";
 import { LinkToMessenger } from "./LinkToMessenger";
 import add from "assets/icons/add.svg";
 
