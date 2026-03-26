@@ -1,13 +1,21 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+
+const messengerUrls = {
+  Viber: "viber://chat?number=%2B0660776326",
+  Telegram: "https://t.me/barskij_dvor"
+};
 
 export const LinkToMessenger = ({ url, children }) => {
-    const redirectToMessanger = url => {
-        window.open(url);
-    };
-    return (
-        <Link to="" onClick={() => redirectToMessanger(url)}>
-            {children}
-        </Link>
-    );
+  const href = url || messengerUrls[children] || "#";
+
+  const redirectToMessanger = (event) => {
+    event.preventDefault();
+    window.open(href);
+  };
+
+  return (
+    <a href={href} onClick={redirectToMessanger}>
+      {children}
+    </a>
+  );
 };

@@ -1,24 +1,23 @@
-@import "../variables.scss";
 
 .socialMessengerButton {
     position: relative;
     width: 216px;
     margin-right: 33px;
     height: 48px;
-    border: 3px solid $white;
+    border: 3px solid var(--color-white);
     align-items: center;
     text-align: center;
     letter-spacing: 3px;
     text-transform: uppercase;
     font-family: "BrutalType-Bold";
-    color: $white;
+    color: var(--color-white);
     display: flex;
     justify-content: center;
     padding-right: 48px;
     &__svg {
         position: absolute;
         right: 0;
-        background: $white;
+        background: var(--color-white);
         height: 100%;
         display: flex;
         width: 48px;
@@ -28,20 +27,20 @@
         }
     }
     &:hover {
-        color: $orange;
-        border: 3px solid $orange;
+        color: var(--color-orange);
+        border: 3px solid var(--color-orange);
     }
 
     &:hover .socialMessengerButton__svg {
-        color: $orange;
-        border: 3px solid $orange;
-        background: $orange;
+        color: var(--color-orange);
+        border: 3px solid var(--color-orange);
+        background: var(--color-orange);
     }
 }
 
 .button {
-    color: $white;
-    border: 3px solid $white;
+    color: var(--color-white);
+    border: 3px solid var(--color-white);
     line-height: 100%;
     height: 56px;
     padding: 0 24px;
@@ -51,13 +50,13 @@
     margin-left: 16px;
     svg {
         margin-left: 15px;
-        fill: $white;
+        fill: var(--color-white);
     }
     &:hover {
-        border: 3px solid $orange;
-        color: $orange;
+        border: 3px solid var(--color-orange);
+        color: var(--color-orange);
         svg {
-            fill: $orange;
+            fill: var(--color-orange);
         }
     }
     &:disabled {
@@ -69,18 +68,18 @@
         }
     }
     &__active {
-        border: 3px solid $orange;
-        color: $orange;
+        border: 3px solid var(--color-orange);
+        color: var(--color-orange);
         svg {
             margin-left: 15px;
-            fill: $orange;
+            fill: var(--color-orange);
         }
     }
 }
 
 .sliderButton {
     padding: 11px;
-    border: 2px solid $white;
+    border: 2px solid var(--color-white);
 
     &__left {
         margin-right: 40px;

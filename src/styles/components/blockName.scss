@@ -1,8 +1,8 @@
-@import '../variables.scss';
+@use '../variables.scss';
 
 .blockName {
     h2 {
-        color: $white;
+        color: var(--color-white);
         margin: 24px 0;
     }
     span {
@@ -17,7 +17,7 @@
         background: #f7a73a;
     }
     #howWeWork {
-        color: $white;
+        color: var(--color-white);
     }
 }
 

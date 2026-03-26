@@ -1,6 +1,6 @@
-@import "./all.scss";
-@import "./fonts/fonts.scss";
-@import "./variables.scss";
+@use "./variables" as *;
+@use "./all";
+@use "./fonts/fonts";
 
 html,
 body {
@@ -18,7 +18,7 @@ body {
 
 a {
     text-decoration: none;
-    color: $orange;
+    color: var(--color-orange);
     cursor: pointer;
 }
 
@@ -39,7 +39,7 @@ h1 {
 h2 {
     font-size: 48px;
     text-transform: uppercase;
-    color: $white;
+    color: var(--color-white);
 }
 
 h3 {

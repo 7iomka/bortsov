@@ -1,6 +1,5 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { HashLink as Link } from "react-router-hash-link";
 
 export const BurgerMenu = ({ linksKey }) => {
     const { t } = useTranslation();
@@ -51,9 +50,9 @@ export const BurgerMenu = ({ linksKey }) => {
                             </svg>
                         </li>
                         {linksKey.map((link) => (
-                            <Link key={link.key} to={`#${link.route}`}>
+                            <a key={link.key} href={`#${link.route}`}>
                                 <li>{t([`header.navbarLinks.${link.key}`])}</li>
-                            </Link>
+                            </a>
                         ))}
                     </ul>
                 </section>

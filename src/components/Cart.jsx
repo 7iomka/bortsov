@@ -1,15 +1,13 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
 import { CartItem } from "./CartItem";
-import { setCart } from "redux/features/catalog";
+import { setCart } from "../redux/features/catalog";
 import { LinkToMessenger } from "./LinkToMessenger";
 import add from "assets/icons/add.svg";
 
 export const Cart = ({ toggleShowCart, handleRemoveFromCart }) => {
     const dispatch = useDispatch();
-    const history = useHistory();
     const cart = useSelector(({ catalog }) => catalog.cart);
 
     React.useEffect(() => {
@@ -20,9 +18,8 @@ export const Cart = ({ toggleShowCart, handleRemoveFromCart }) => {
     React.useEffect(() => {
         return () => {
             document.body.style.overflow = "visible";
-            history.push("/");
         };
-    }, [history]);
+    }, []);
 
     return (
         <div className='blackout'>
