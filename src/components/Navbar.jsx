@@ -1,6 +1,5 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { HashLink as Link } from "react-router-hash-link";
 
 import { BurgerMenu } from "./BurgerMenu";
 import mainLogo from "assets/icons/mainLogo.svg";
@@ -21,9 +20,9 @@ export const Navbar = () => {
             <img className='mainLogo' src={mainLogo} alt='mainLogo' />
             <ul>
                 {linksKey.map((link) => (
-                    <Link key={link.key} to={`#${link.route}`}>
+                    <a key={link.key} href={`#${link.route}`}>
                         <li>{t([`header.navbarLinks.${link.key}`])}</li>
-                    </Link>
+                    </a>
                 ))}
             </ul>
             <BurgerMenu linksKey={linksKey} />

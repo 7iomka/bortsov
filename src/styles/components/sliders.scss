@@ -1,4 +1,3 @@
-@import "../variables.scss";
 
 .awssld__content > img {
   object-fit: fill;
@@ -9,23 +8,23 @@
 }
 
 .awssld__bullets .awssld__bullets--active {
-  background: $orange;
+  background: var(--color-orange);
 }
 
 .awssld__controls__arrow-left {
   &::before {
-    background: $orange;
+    background: var(--color-orange);
   }
   &::after {
-    background: $orange;
+    background: var(--color-orange);
   }
 }
 
 .awssld__controls__arrow-right {
   &::before {
-    background: $orange;
+    background: var(--color-orange);
   }
   &::after {
-    background: $orange;
+    background: var(--color-orange);
   }
 }

@@ -1,4 +1,3 @@
-@import "../variables.scss";
 
 .header {
   &__socialLinksTitle {
@@ -23,7 +22,7 @@
     }
 
     &__phones {
-      color: $white;
+      color: var(--color-white);
       margin-left: 80px;
       span {
         margin-right: 24px;
@@ -44,16 +43,16 @@
     justify-content: space-between;
     flex-flow: wrap;
     h1 {
-      color: $white;
+      color: var(--color-white);
       letter-spacing: 5px;
       .colorText {
-        color: $orange;
+        color: var(--color-orange);
       }
     }
     .underblock {
       width: 120px;
       height: 5px;
-      background: $white;
+      background: var(--color-white);
       margin: 24px 0 24px 0;
     }
     h5 {

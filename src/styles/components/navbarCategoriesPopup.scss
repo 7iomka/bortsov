@@ -14,7 +14,7 @@
     }
 
     &__label {
-        color: $white;
+        color: var(--color-white);
         background: #1f2023;
         border: 3px solid #f7a73a;
         svg {
