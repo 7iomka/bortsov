@@ -1,6 +1,6 @@
-@import "./variables.scss";
-@import "./all.scss";
-@import "./fonts/fonts.scss";
+@use "./variables" as *;
+@use "./all";
+@use "./fonts/fonts";
 
 html,
 body {
