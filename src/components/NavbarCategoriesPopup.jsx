@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector, useDispatch } from 'react-redux';
 
-import { setCategory, setProducts } from 'redux/features/catalog';
+import { setCategory, setProducts } from '../redux/features/catalog';
 
 export const NavbarCategoriesPopup = () => {
     const { t } = useTranslation();
