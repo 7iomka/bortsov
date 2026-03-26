@@ -1,19 +1,20 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { BrowserRouter as Router } from "react-router-dom";
-import { Provider } from "react-redux";
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Provider } from 'react-redux';
 
-import App from "./App";
-import "i18n/i18n";
-import { store } from "./redux/store";
+import App from './App';
+import 'i18n/i18n';
+import { store } from './redux/store';
 
-import "./styles/styles.scss";
+import './styles/styles.scss';
 
-ReactDOM.render(
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
     <Provider store={store}>
-        <Router>
-            <App />
-        </Router>
-    </Provider>,
-    document.getElementById("root")
+      <Router>
+        <App />
+      </Router>
+    </Provider>
+  </StrictMode>
 );
